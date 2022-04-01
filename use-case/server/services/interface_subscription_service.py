@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Abstract(ABC):
+class ISubscriptionService(ABC):
     @abstractmethod
-    def get_subscription(self):
+    def get_subscriptions(self):
         pass

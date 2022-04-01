@@ -19,5 +19,4 @@ app.add_middleware(
 app.include_router(api_router)
 
 if __name__ == '__main__':
-    print( "MONGO_USER", os.getenv("MONGO_USER") )
     uvicorn.run("main:app", host='127.0.0.1', port=8005, log_level="info", reload=True)
