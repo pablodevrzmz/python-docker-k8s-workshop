@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+    ui:
+       #image: my-image
+       container_name: workshop-angular-service
+       build: ./ui/subscription-admin
+       ports:
+           - "80:80"
+       links:
+           - server
+       depends_on:
+            - server
+    server:
+      container_name: workshop-python-service
+      build: ./server
+      ports:
+      - "8005:8005"
+
+# docker compose build 
+# docker-compose up -d

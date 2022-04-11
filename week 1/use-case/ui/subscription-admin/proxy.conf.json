@@ -1,6 +1,6 @@
 {
     "/subscriptions": {
-        "target": "http://127.0.0.1:8005",
+        "target": "http://server:8005",
         "secure": false
     }
 }
