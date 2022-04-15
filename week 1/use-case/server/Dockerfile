@@ -10,10 +10,10 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 COPY . /app
 
 # No docker-compose approach
-ENV MONGO_USER='abc'
-ENV MONGO_PASS='abc'
-ENV MONGO_DB='abc'
-ENV MONGO_SERVER='abc'
+# ENV MONGO_USER='abc'
+# ENV MONGO_PASS='abc'
+# ENV MONGO_DB='abc'
+# ENV MONGO_SERVER='abc'
 
 EXPOSE 8005
 
