@@ -27,7 +27,9 @@ https://nodejs.org/es/download/
 https://angular.io/cli
 npm install -g @angular/cli
 
-3. Construir: npm run build
+3.a instalar: npm install
+
+3.b Construir: npm run build
 
 4. Levantar: ng serve
 

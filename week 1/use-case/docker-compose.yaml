@@ -1,7 +1,7 @@
 version: "3.7"
 services:
     ui:
-       #image: my-image
+       #image: ubuntu
        build: ./ui/subscription-admin
        ports:
            - "80:80"
@@ -24,10 +24,14 @@ services:
         timeout: 20s
         retries: 5
       environment:
-        - MONGO_USER=abc
-        - MONGO_PASS=abc
-        - MONGO_DB=abc
-        - MONGO_SERVER=abc     
+        - MONGO_USER=admin
+        - MONGO_PASS=admin
+        - MONGO_DB=workshop
+        - MONGO_SERVER=workshop-cluster.ajivk.mongodb.net     
 
-# docker compose build 
+# docker-compose build 
 # docker-compose up -d
+# docker-compose up
+
+
+## docker-compose down

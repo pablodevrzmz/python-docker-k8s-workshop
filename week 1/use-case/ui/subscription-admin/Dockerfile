@@ -1,5 +1,6 @@
 # Build app
 
+# Usando la imagen de node para contruir la aplicacion de angular
 FROM node as build
 
 WORKDIR /usr/local/app
@@ -11,7 +12,7 @@ RUN npm install
 RUN npm run build
 
 # Deploy and lift app
-FROM nginx:latest
+FROM nginx
 
 COPY --from=build /usr/local/app/dist/subscription-admin /usr/share/nginx/html
 COPY --from=build /usr/local/app/nginx.conf /etc/nginx/nginx.conf
